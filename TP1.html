@@ -9,7 +9,7 @@
 
     </head>
 
-    <body>
+    <body style="background-color:powderblue;">
 
           <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
         <!-- votre propre fichier dans le dossier de votre projet -->
@@ -18,56 +18,12 @@
 
 <form class="needs-validation" novalidate>
 
-  <div class="col-md-4">
-    <label for="Nom" class="form-label">Nom</label>
-    <input type="text" pattern="[a-zA-Z ,.'-]{1,}" class="form-control" id="Nom" placeholder="Dupont" required>
-        <div class="invalid-feedback">
-          Veuillez rentrer un nom de famille composé uniquement de lettres
-        </div>
-          <div class="valid-feedback">
-            Nice!
-          </div>  
-  </div>
 
+<div class="container">
+  <div class="row">
 
-  <div class="col-md-4">
-    <label for="Prenom" class="form-label">Prenom</label>
-    <input type="text" pattern="[a-zA-Z ,.'-]{1,}" class="form-control" id="Prenom" placeholder="Jean-Michel" required>
-        <div class="invalid-feedback">
-          Veuillez rentrer un Prenom uniquement composé de lettres.
-        </div>
-          <div class="valid-feedback">
-            Nice!
-          </div>  
-  </div>
-
-
-  <div class="col-md-4">
-    <label for="Email" class="form-label">Email</label>
-    <div class="input-group has-validation">
-      <span class="input-group-text" id="inputGroupPrepend3">@</span>
-        <input type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,}" class="form-control" id="Email" placeholder="something@gmail.com"  required>
-          <div class="invalid-feedback">
-            Veuillez entrer un email valide!
-          </div>
-          <div class="valid-feedback">
-            Nice!
-          </div>  
-
-    </div>
-  </div>
-
-
-  <div class="col-md-6">
-    <label for="Ville" class="form-label">Ville</label>
-    <input type="text" pattern="[a-zA-Z ,.'-]{1,}" class="form-control" id="Ville" placeholder="Strasbourg" required>
-    <div class="invalid-feedback">
-      Veuillez renseigner une ville.
-    </div>
-  </div>
-
-
-  <div class="col-md-3">
+<div class="col">
+   <div class="col-md-9">
     <label for="Civilite" class="form-label">Civilité</label>
     <select class="form-select" id="Civilite" placeholder="Civilité" required>
       <option selected disabled value="">...</option>
@@ -83,8 +39,70 @@
           </div>  
   </div>
 
+</div>
 
-  <div class="col-md-3">
+<div class="col">     
+<div class="col-md-9">
+    <label for="Nom" class="form-label">Nom</label>
+    <input type="text" pattern="[a-zA-Z ,.'-]{1,}" class="form-control" id="Nom" placeholder="Dupont" required>
+          <div class="invalid-feedback">
+            Veuillez rentrer un nom de famille composé uniquement de lettres
+          </div>
+          <div class="valid-feedback">
+            Nice!
+          </div>  
+      </div>
+    </div>
+
+  <div class="col">
+        <div class="col-md-9">
+    <label for="Prenom" class="form-label">Prenom</label>
+    <input type="text" pattern="[a-zA-Z ,.'-]{1,}" class="form-control" id="Prenom" placeholder="Jean-Michel" required>
+            <div class="invalid-feedback">
+               Veuillez rentrer un Prenom uniquement composé de lettres.
+            </div>
+           <div class="valid-feedback">
+             Nice!
+           </div>  
+        </div>
+    </div>
+
+
+  </div>
+</div>
+
+    
+        <div class="col-md-6">
+    <label for="Email" class="form-label">Email</label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="inputGroupPrepend3">@</span>
+        <input type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,}" class="form-control" id="Email" placeholder="something@gmail.com"  required>
+          <div class="invalid-feedback">
+            Veuillez entrer un email valide!
+          </div>
+          <div class="valid-feedback">
+            Nice!
+          </div>  
+        </div>
+      </div>
+    
+
+<div class="row">
+
+
+  <div class="col">
+  <div class="col-md-9">
+    <label for="Ville" class="form-label">Ville</label>
+    <input type="text" pattern="[a-zA-Z ,.'-]{1,}" class="form-control" id="Ville" placeholder="Strasbourg" required>
+    <div class="invalid-feedback">
+      Veuillez renseigner une ville.
+    </div>
+  </div>
+  </div>
+
+  <div class="col">
+    
+    <div class="col-md-9">
     <label for="CP" class="form-label">Code Postal</label>
     <input type="text" pattern="[0-9]{5}"class="form-control" id="CP" placeholder="67000" required>
     <div class="invalid-feedback">
@@ -94,6 +112,10 @@
         Nice!
       </div>  
   </div>
+  </div>
+
+</div>
+
 
 
     <div class="col-md-6">
@@ -179,24 +201,31 @@
         <div class="valid-feedback">
             Nice!
         </div> 
-
     </div>  
+
+
+<div class="row"> 
+  <div class="col">
+    <div class="col-md-9">
+
   <label for="Login" class="form-label"> Login </label>
     <input type="text" pattern="[a-zA-Z]{1,10}"class="form-control" id="Login" placeholder="Hyana" required>
     <div class="invalid-feedback">
       Veuillez renseigner un login composé uniquement de lettres et de 10 caractères maximum!
   </div>
+</div>
+</div>
 
-
+ <div class ="col">
   <label for="Password" class="form-label"> Password </label>
     <input type="password" pattern="^(?=.*[\d\W])(?=.*[a-z])(?=.*[A-Z]).{8,100}$" class="form-control" id="Password" placeholder="**********"required>
     <div class="invalid-feedback">
       Veuillez renseigner un mot de passe composé d'au moins 8 caractères avec au moins une majuscule, une miniscule, un chiffre ou un caractère spécial !
   </div>
+</div>
 
-
-
-  <div class="col-md-6">
+ <div class="col">
+  <div class="col-md-9">
     <label for="Telephone" class="form-label">Telephone</label>
     <input type="text" pattern="[0-9]{10}" class="form-control" id="Telephone" placeholder="0706060606" required>
       <div class="invalid-feedback">
@@ -206,7 +235,8 @@
             Nice!
         </div> 
   </div>
-
+</div>
+</div>
 
   <div class="col-12">
     <div class="form-check">
