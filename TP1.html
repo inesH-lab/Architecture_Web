@@ -16,6 +16,8 @@
         
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
+<h1 align="center"> Formulaire client </h1>
+
 <form class="needs-validation" novalidate>
 
 
@@ -71,25 +73,25 @@
   </div>
 </div>
 
-    
+<div class="row" align="center">
+  <div class="col">
         <div class="col-md-6">
-    <label for="Email" class="form-label">Email</label>
-    <div class="input-group has-validation">
-      <span class="input-group-text" id="inputGroupPrepend3">@</span>
-        <input type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,}" class="form-control" id="Email" placeholder="something@gmail.com"  required>
-          <div class="invalid-feedback">
-            Veuillez entrer un email valide!
-          </div>
-          <div class="valid-feedback">
-            Nice!
-          </div>  
-        </div>
-      </div>
-    
+          <label for="Email" class="form-label">Email</label>
+            <div class="input-group has-validation">
+               <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                  <input type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,}" class="form-control" id="Email" placeholder="something@gmail.com"  required>
+                      <div class="invalid-feedback">
+                          Veuillez entrer un email valide!
+                      </div>
+                        <div class="valid-feedback">
+                          Nice!
+                        </div>  
+           </div>
+       </div>
+    </div>
+  </div>
 
-<div class="row">
-
-
+<div class="row" align="center">
   <div class="col">
   <div class="col-md-9">
     <label for="Ville" class="form-label">Ville</label>
@@ -117,14 +119,19 @@
 </div>
 
 
-
-    <div class="col-md-6">
+  <div class="row" align="center">
+    <div class ="col">
+    <div class="col-md-4">
     <label for="NumeroVoie" class="form-label"> N° de Voie </label>
-    <input type="text" pattern="[0-9]{1,4}" class="form-control" id="NumeroVoie" placeholder="123" required >
+    <input type="text" pattern="[0-9]{1,4}" class="form-control" id="NumeroVoie" placeholder="123"  required >
     </div>
+  </div>
+  </div>
 
 
-    <div class="col-md-6">
+<div class="row" align="center">
+    <div class ="col">
+    <div class="col-md-2">
       <label for="IndiceDeRepetition" class="form-label" placeholder="Indice de répétition"> </label>
       <select class="form-select" id="IndiceDeRepetition">
       <option selected disabled value="">Indice de répétition</option>
@@ -135,9 +142,13 @@
       <option>quinquies</option>
     </select>
   </div>
+</div>
+</div>
 
 
-  <div class="col-md-3">
+<div class="row" align="center">
+ <div class ="col">
+  <div class="col-md-4">
   <label for="Voie" class="form-label">Type de Voie</label>
     <select class="form-select" id="Voie" required>
       <option selected disabled value="">...</option>
@@ -190,8 +201,12 @@
         <div class="valid-feedback">
             Nice!
         </div>  
+</div>
+</div>
+</div>
 
-
+<div class="row" align="center">
+ <div class ="col">
   <div class="col-md-6">  
   <label for="NomDeVoie" class="form-label">Nom de voie </label>
     <input type="text" pattern="[a-zA-Z ,.'-]{1,}" class="form-control" id="NomDeVoie" placeholder="De la Haye" required>
@@ -202,11 +217,13 @@
             Nice!
         </div> 
     </div>  
+</div>
+</div>
 
-
+<div class="container">
 <div class="row"> 
   <div class="col">
-    <div class="col-md-9">
+    <div class="col-md-11">
 
   <label for="Login" class="form-label"> Login </label>
     <input type="text" pattern="[a-zA-Z]{1,10}"class="form-control" id="Login" placeholder="Hyana" required>
@@ -217,15 +234,17 @@
 </div>
 
  <div class ="col">
+  <div class="col-md-11">
   <label for="Password" class="form-label"> Password </label>
     <input type="password" pattern="^(?=.*[\d\W])(?=.*[a-z])(?=.*[A-Z]).{8,100}$" class="form-control" id="Password" placeholder="**********"required>
     <div class="invalid-feedback">
       Veuillez renseigner un mot de passe composé d'au moins 8 caractères avec au moins une majuscule, une miniscule, un chiffre ou un caractère spécial !
   </div>
 </div>
+</div>
 
  <div class="col">
-  <div class="col-md-9">
+  <div class="col-md-11">
     <label for="Telephone" class="form-label">Telephone</label>
     <input type="text" pattern="[0-9]{10}" class="form-control" id="Telephone" placeholder="0706060606" required>
       <div class="invalid-feedback">
@@ -237,8 +256,9 @@
   </div>
 </div>
 </div>
+</div>
 
-  <div class="col-12">
+  <div class="col-12" align="center">
     <div class="form-check">
       <input class="form-check" type="checkbox" required>
       <label class="form-check-label" for="invalidCheck3">
@@ -254,7 +274,7 @@
    </div>
 
 
-  <div class="col-12">
+  <div class="col-12" align="center">
     <button class="btn btn-primary" type="submit">Envoyer le formulaire</button>
   </div>
 
