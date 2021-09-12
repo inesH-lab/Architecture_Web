@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet/less" type="text/css" href="style.less" />
+        <title>C'est mon TP</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+
+          <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+        <!-- votre propre fichier dans le dossier de votre projet -->
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+<form class="needs-validation" novalidate>
+
+  <div class="col-md-4">
+    <label for="Nom" class="form-label">Nom</label>
+    <input type="text" pattern="[a-zA-Z ,.'-]{1,}" class="form-control" id="Nom" placeholder="Dupont" required>
+        <div class="invalid-feedback">
+          Veuillez rentrer un nom de famille composé uniquement de lettres
+        </div>
+          <div class="valid-feedback">
+            Nice!
+          </div>  
+  </div>
+
+
+  <div class="col-md-4">
+    <label for="Prenom" class="form-label">Prenom</label>
+    <input type="text" pattern="[a-zA-Z ,.'-]{1,}" class="form-control" id="Prenom" placeholder="Jean-Michel" required>
+        <div class="invalid-feedback">
+          Veuillez rentrer un Prenom uniquement composé de lettres.
+        </div>
+          <div class="valid-feedback">
+            Nice!
+          </div>  
+  </div>
+
+
+  <div class="col-md-4">
+    <label for="Email" class="form-label">Email</label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="inputGroupPrepend3">@</span>
+        <input type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,}" class="form-control" id="Email" placeholder="something@gmail.com"  required>
+          <div class="invalid-feedback">
+            Veuillez entrer un email valide!
+          </div>
+          <div class="valid-feedback">
+            Nice!
+          </div>  
+
+    </div>
+  </div>
+
+
+  <div class="col-md-6">
+    <label for="Ville" class="form-label">Ville</label>
+    <input type="text" pattern="[a-zA-Z ,.'-]{1,}" class="form-control" id="Ville" placeholder="Strasbourg" required>
+    <div class="invalid-feedback">
+      Veuillez renseigner une ville.
+    </div>
+  </div>
+
+
+  <div class="col-md-3">
+    <label for="Civilite" class="form-label">Civilité</label>
+    <select class="form-select" id="Civilite" placeholder="Civilité" required>
+      <option selected disabled value="">...</option>
+      <option>Madame</option>
+      <option>Monsieur</option>
+      <option>Autre</option>
+    </select>
+    <div class="invalid-feedback">
+      Veuillez choisir votre civilité!
+    </div>
+          <div class="valid-feedback">
+            Nice!
+          </div>  
+  </div>
+
+
+  <div class="col-md-3">
+    <label for="CP" class="form-label">Code Postal</label>
+    <input type="text" pattern="[0-9]{5}"class="form-control" id="CP" placeholder="67000" required>
+    <div class="invalid-feedback">
+      Veuillez renseigner un code postal à 5 chiffres.
+    </div>
+     <div class="valid-feedback">
+        Nice!
+      </div>  
+  </div>
+
+
+    <div class="col-md-6">
+    <label for="NumeroVoie" class="form-label"> N° de Voie </label>
+    <input type="text" pattern="[0-9]{1,4}" class="form-control" id="NumeroVoie" placeholder="123" required >
+    </div>
+
+
+    <div class="col-md-6">
+      <label for="IndiceDeRepetition" class="form-label" placeholder="Indice de répétition"> </label>
+      <select class="form-select" id="IndiceDeRepetition">
+      <option selected disabled value="">Indice de répétition</option>
+      <option> </option>
+      <option>bis</option>
+      <option>ter</option>
+      <option>quater</option>
+      <option>quinquies</option>
+    </select>
+  </div>
+
+
+  <div class="col-md-3">
+  <label for="Voie" class="form-label">Type de Voie</label>
+    <select class="form-select" id="Voie" required>
+      <option selected disabled value="">...</option>
+      <option>Allée</option>
+      <option>Avenue</option>
+      <option>Boulevard</option>
+      <option>Carrefour</option>
+      <option>Chemin</option>
+      <option>Chaussée</option>
+      <option>Cité</option>
+      <option>Corniche</option>
+      <option>Cours</option>
+      <option>Domaine</option>
+      <option>Descente</option>
+      <option>Ecart</option>
+      <option>Esplanade</option>
+      <option>Faubourg</option>
+      <option>Grande Rue</option>
+      <option>Hameau</option>
+      <option>Halle</option>
+      <option>Impasse</option>
+      <option>Lieu-Dit</option>
+      <option>Lotissement</option>
+      <option>Marché</option>
+      <option>Montée</option>
+      <option>Passage</option>
+      <option>Place</option>
+      <option>Plaine</option>
+      <option>Plateau</option>
+      <option>Promenade</option>
+      <option>Parvis</option>
+      <option>Quartier</option>
+      <option>Quai</option>
+      <option>Résidence</option>
+      <option>Ruelle</option>
+      <option>Rocade</option>
+      <option>Rond-Point</option>
+      <option>Route</option>
+      <option>Rue</option>
+      <option>Sente-Sentier</option>
+      <option>Square</option>
+      <option>Terre-Plein</option>
+      <option>Traverse</option>
+      <option>Villa</option>
+      <option>Village</option>
+    </select>
+        <div class="invalid-feedback">
+          Veuillez choisir un type de voie!
+        </div>
+        <div class="valid-feedback">
+            Nice!
+        </div>  
+
+
+  <div class="col-md-6">  
+  <label for="NomDeVoie" class="form-label">Nom de voie </label>
+    <input type="text" pattern="[a-zA-Z ,.'-]{1,}" class="form-control" id="NomDeVoie" placeholder="De la Haye" required>
+        <div class="invalid-feedback">
+          Veuillez renseigner un nom de voie composé uniquement de lettres (les '-' sont également valables).
+        </div>
+        <div class="valid-feedback">
+            Nice!
+        </div> 
+
+    </div>  
+  <label for="Login" class="form-label"> Login </label>
+    <input type="text" pattern="[a-zA-Z]{1,10}"class="form-control" id="Login" placeholder="Hyana" required>
+    <div class="invalid-feedback">
+      Veuillez renseigner un login composé uniquement de lettres et de 10 caractères maximum!
+  </div>
+
+
+  <label for="Password" class="form-label"> Password </label>
+    <input type="password" pattern="^(?=.*[\d\W])(?=.*[a-z])(?=.*[A-Z]).{8,100}$" class="form-control" id="Password" placeholder="**********"required>
+    <div class="invalid-feedback">
+      Veuillez renseigner un mot de passe composé d'au moins 8 caractères avec au moins une majuscule, une miniscule, un chiffre ou un caractère spécial !
+  </div>
+
+
+
+  <div class="col-md-6">
+    <label for="Telephone" class="form-label">Telephone</label>
+    <input type="text" pattern="[0-9]{10}" class="form-control" id="Telephone" placeholder="0706060606" required>
+      <div class="invalid-feedback">
+      Veuillez renseigner un numéro composé de 10 chiffres.
+     </div>
+        <div class="valid-feedback">
+            Nice!
+        </div> 
+  </div>
+
+
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check" type="checkbox" required>
+      <label class="form-check-label" for="invalidCheck3">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        Vous devez accepter les conditions d'utilisations! 
+      </div>
+        <div class="valid-feedback">
+            Nice!
+        </div> 
+    </div>
+   </div>
+
+
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Envoyer le formulaire</button>
+  </div>
+
+
+</form>
+
+
+  <script src="formulaire.js"></script>
+    </body>
+</html>
